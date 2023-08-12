@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="rqt_multiplot" type="rqt_multiplot" name="gcs_monitor" 
+		output="screen" clear_params="true"
+		args="--multiplot-config file://$(find px4_gcs)/multiplot/monitor.xml"/>	
+</launch>

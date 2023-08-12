@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+	<arg name="name" default="armattan"/>
+	<arg name="navigation" default="vicon/odometry"/>
+	<arg name="traj" default=""/>
+	<arg name="kill_switch_ch" default="5" />
+
+	<group ns="$(arg name)">
+	<node pkg="px4_gcs" type="px4_gcs" name="px4_gcs" output="screen" clear_params="true">
+		<param name="name" type="string" value="$(arg name)" />
+		<param name="navigation" type="string" value="$(arg navigation)" />
+		<param name="traj" type="string" value="$(arg traj)" />
+		<param name="kill_switch_ch" type="int" value="$(arg kill_switch_ch)" />
+	</node>
+	</group>
+
+</launch>
