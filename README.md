@@ -7,6 +7,16 @@
 * #### *Jeonghyun Byun* (quswjdgus97@snu.ac.kr) ####
 
 ## Installation Guide ##
+* #### ROS-Keyboard ####
+* On your 'src' folder in the workspace:
+```
+$ git clone https://github.com/lrse/ros-keyboard.git
+```
+* #### Could NOT find SDL ####
+```
+$ sudo apt-get install libsdl-image1.2-dev
+$ sudo apt-get install libsdl-dev
+```
 * #### QtCreator ####
 ```
 $ sudo apt-get install qtcreator
